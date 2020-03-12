@@ -1,12 +1,12 @@
 {
-  "name": "OrganizationManager",
+  "name": "orginazation_mananger",
   "version": "1.0.0",
   "description": "",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.prod.js --mode production",
-    "start": "npm run dev && webpack-dev-server --config webpack.dev.js",
+    "start": "webpack-dev-server --config webpack.dev.js",
     "dev": "webpack --config webpack.dev.js --mode development"
   },
   "keywords": [],

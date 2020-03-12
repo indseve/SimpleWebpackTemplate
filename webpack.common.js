@@ -1,8 +1,9 @@
  const path = require('path');
+ const {CleanWebpackPlugin} = require('clean-webpack-plugin'); 
 
  module.exports = {
      entry: './src/main.js',
-     plugins: [],
+     plugins: [new CleanWebpackPlugin(['dist'])],
      module: {
          rules: [{
              test: /\.js$/,
