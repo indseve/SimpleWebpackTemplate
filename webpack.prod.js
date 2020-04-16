@@ -8,13 +8,13 @@ module.exports = merge(common, {
   devtool: 'source-map',
   plugins: [
     new UglifyJSPlugin({
-      uglifyOptions: {
-        compress: {
-          warnings: false,
+      uglifyOptions: {        
+        compress: {          
           drop_debugger: true, // 清除debugger語句
           drop_console: true,
           pure_funcs: ['console.log'] // 清除console
-        }
+        },
+        warnings: false
       },
       sourceMap: true,
       parallel: true,
